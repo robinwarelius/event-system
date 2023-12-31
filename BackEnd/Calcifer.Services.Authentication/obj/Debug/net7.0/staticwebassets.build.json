@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nWhBM9qenz/mTHrimINoD1ZjTrN39bTHGnzXWchgiY0=",
+  "Source": "Calcifer.Services.AuthAPI",
+  "BasePath": "_content/Calcifer.Services.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

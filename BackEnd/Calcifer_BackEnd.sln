@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33906.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F42CAE2B-3628-4EBF-B646-F4954D1116EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{0F24AD9F-A4FF-4961-BC68-47786BEDD327}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{82774C17-040F-4B81-AB72-98DD6AF00AD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calcifer.Services.EventAPI", "Calcifer.Services.Activities\Calcifer.Services.EventAPI.csproj", "{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calcifer.Services.AuthAPI", "Calcifer.Services.Authentication\Calcifer.Services.AuthAPI.csproj", "{B0576033-8BB4-4ADC-89AB-70328C42363A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calcifer.MessageBus", "Calcifer.MessageBus\Calcifer.MessageBus.csproj", "{81607ECC-F252-4DE5-B844-5A57B49B93C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A} = {F42CAE2B-3628-4EBF-B646-F4954D1116EB}
+		{B0576033-8BB4-4ADC-89AB-70328C42363A} = {F42CAE2B-3628-4EBF-B646-F4954D1116EB}
+		{81607ECC-F252-4DE5-B844-5A57B49B93C3} = {82774C17-040F-4B81-AB72-98DD6AF00AD6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A30BBC4-44A1-4206-8838-2C897F2CF4D1}
+	EndGlobalSection
+EndGlobal

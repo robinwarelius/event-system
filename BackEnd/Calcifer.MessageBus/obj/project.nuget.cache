@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7p+VWnkJP+NghxXLsSKMehyJ9BfG/WhxnanA/seEVG+7tJjlUKVucziccH9Hd2s1yO4/ptpOuabUmM24OT2LJw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Robin\\OneDrive\\Skrivbord\\Nackademin-Kurser\\ExamensArbete\\BackEnd\\Calcifer.MessageBus\\Calcifer.MessageBus.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Robin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.5\\microsoft.windowsdesktop.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\Robin\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.5\\microsoft.netcore.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\Robin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.5\\microsoft.aspnetcore.app.ref.7.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

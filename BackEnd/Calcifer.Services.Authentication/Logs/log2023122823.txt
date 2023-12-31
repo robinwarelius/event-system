@@ -1,0 +1,42 @@
+2023-12-28 23:20:18.864 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-28 23:20:19.099 +01:00 [INF] Now listening on: https://localhost:7114
+2023-12-28 23:20:19.103 +01:00 [INF] Now listening on: http://localhost:5080
+2023-12-28 23:20:19.105 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-28 23:20:19.107 +01:00 [INF] Hosting environment: Development
+2023-12-28 23:20:19.108 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Authentication
+2023-12-28 23:20:21.272 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/index.html - -
+2023-12-28 23:20:21.640 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/index.html - - - 200 - text/html;charset=utf-8 371.7788ms
+2023-12-28 23:20:21.640 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - -
+2023-12-28 23:20:21.641 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7114/_vs/browserLink - -
+2023-12-28 23:20:21.666 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7114/_framework/aspnetcore-browser-refresh.js - - - 200 12396 application/javascript;+charset=utf-8 24.9554ms
+2023-12-28 23:20:21.681 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7114/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1870ms
+2023-12-28 23:20:21.981 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - -
+2023-12-28 23:20:22.007 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7114/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.2052ms
+2023-12-28 23:21:10.451 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-12-28 23:21:10.710 +01:00 [INF] Now listening on: https://localhost:7001
+2023-12-28 23:21:10.714 +01:00 [INF] Now listening on: http://localhost:5080
+2023-12-28 23:21:10.717 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-28 23:21:10.718 +01:00 [INF] Hosting environment: Development
+2023-12-28 23:21:10.720 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Authentication
+2023-12-28 23:21:12.173 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger - -
+2023-12-28 23:21:12.224 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger - - - 301 0 - 53.4860ms
+2023-12-28 23:21:12.239 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/index.html - -
+2023-12-28 23:21:12.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui.css - -
+2023-12-28 23:21:12.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - -
+2023-12-28 23:21:12.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui-bundle.js - -
+2023-12-28 23:21:12.430 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/_vs/browserLink - -
+2023-12-28 23:21:12.429 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - -
+2023-12-28 23:21:12.437 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/index.html - - - 200 - text/html;charset=utf-8 198.2046ms
+2023-12-28 23:21:12.486 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_framework/aspnetcore-browser-refresh.js - - - 200 12396 application/javascript;+charset=utf-8 57.4347ms
+2023-12-28 23:21:12.523 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-28 23:21:12.523 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-28 23:21:12.524 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.9979ms
+2023-12-28 23:21:12.528 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 98.5843ms
+2023-12-28 23:21:12.528 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-28 23:21:12.529 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui.css - - - 200 143943 text/css 100.4360ms
+2023-12-28 23:21:12.533 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 103.9721ms
+2023-12-28 23:21:12.849 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - -
+2023-12-28 23:21:12.876 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7001/swagger/favicon-32x32.png - -
+2023-12-28 23:21:12.878 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-12-28 23:21:12.879 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 30.0457ms
+2023-12-28 23:21:12.880 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7001/swagger/favicon-32x32.png - - - 200 628 image/png 3.9435ms

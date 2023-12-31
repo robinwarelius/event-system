@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Calcifer.Services.Activities.props" />
+</Project>

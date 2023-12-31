@@ -1,0 +1,11 @@
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\bin\Debug\net7.0\Calcifer.MessageBus.deps.json
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\bin\Debug\net7.0\Calcifer.MessageBus.dll
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\bin\Debug\net7.0\Calcifer.MessageBus.pdb
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\Calcifer.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\Calcifer.MessageBus.AssemblyInfoInputs.cache
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\Calcifer.MessageBus.AssemblyInfo.cs
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\Calcifer.MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\Calcifer.MessageBus.dll
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\refint\Calcifer.MessageBus.dll
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\Calcifer.MessageBus.pdb
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.MessageBus\obj\Debug\net7.0\ref\Calcifer.MessageBus.dll
