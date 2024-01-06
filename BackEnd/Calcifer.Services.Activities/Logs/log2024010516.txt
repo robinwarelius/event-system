@@ -1,0 +1,581 @@
+2024-01-05 16:00:32.016 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7000/api/events/DeleteEvent/e8a5a6d1-5ee4-4b0c-b33c-08dc0dc823c7 - -
+2024-01-05 16:00:32.027 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:00:32.028 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7000/api/events/DeleteEvent/e8a5a6d1-5ee4-4b0c-b33c-08dc0dc823c7 - - - 204 - - 11.9495ms
+2024-01-05 16:00:32.030 +01:00 [INF] Request starting HTTP/2 DELETE https://localhost:7000/api/events/DeleteEvent/e8a5a6d1-5ee4-4b0c-b33c-08dc0dc823c7 - -
+2024-01-05 16:00:32.030 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:00:32.032 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.DeleteEvent (Calcifer.Services.EventAPI)'
+2024-01-05 16:00:32.032 +01:00 [INF] Route matched with {action = "DeleteEvent", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] DeleteEvent(System.Guid) on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:00:32.036 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+WHERE [e].[EventId] = @__id_0
+2024-01-05 16:00:32.040 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Event]
+OUTPUT 1
+WHERE [EventId] = @p0;
+2024-01-05 16:00:32.042 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:00:32.043 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.DeleteEvent (Calcifer.Services.EventAPI) in 9.0037ms
+2024-01-05 16:00:32.043 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.DeleteEvent (Calcifer.Services.EventAPI)'
+2024-01-05 16:00:32.044 +01:00 [INF] Request finished HTTP/2 DELETE https://localhost:7000/api/events/DeleteEvent/e8a5a6d1-5ee4-4b0c-b33c-08dc0dc823c7 - - - 200 - application/json;+charset=utf-8 14.6960ms
+2024-01-05 16:09:30.164 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:09:30.168 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:09:30.169 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:30.170 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:09:30.178 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:09:30.180 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:09:30.181 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 10.5608ms
+2024-01-05 16:09:30.182 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:30.183 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:09:30.184 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 19.7402ms
+2024-01-05 16:09:30.188 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:09:30.190 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:30.191 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:09:30.194 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:09:30.196 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:09:30.197 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.556ms
+2024-01-05 16:09:30.198 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:30.199 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 15.7905ms
+2024-01-05 16:09:46.924 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:09:46.925 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:09:46.926 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:46.927 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:09:46.932 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:09:46.935 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:09:46.936 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 6.6878ms
+2024-01-05 16:09:46.937 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:46.938 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:09:46.939 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 15.2542ms
+2024-01-05 16:09:46.941 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:09:46.946 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:46.947 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:09:46.950 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:09:46.951 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:09:46.952 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.3468ms
+2024-01-05 16:09:46.953 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:46.954 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 16.5755ms
+2024-01-05 16:09:52.209 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:09:52.210 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:09:52.210 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:52.211 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:09:52.214 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:09:52.215 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:09:52.216 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.7665ms
+2024-01-05 16:09:52.218 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:09:52.218 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:52.218 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:09:52.219 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 10.3603ms
+2024-01-05 16:09:52.219 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:52.221 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:09:52.225 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:09:52.227 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:09:52.228 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.7144ms
+2024-01-05 16:09:52.229 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:09:52.230 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 12.8137ms
+2024-01-05 16:11:18.141 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:11:18.144 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:11:18.146 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:11:18.147 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:11:18.151 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:11:18.152 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:11:18.154 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.4978ms
+2024-01-05 16:11:18.157 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:11:18.157 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:11:18.159 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.9181ms
+2024-01-05 16:11:18.160 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:11:18.164 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:11:18.165 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:11:18.168 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:11:18.169 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:11:18.170 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.2219ms
+2024-01-05 16:11:18.171 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:11:18.172 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 14.6857ms
+2024-01-05 16:15:08.581 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:08.586 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:08.587 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:08.588 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:08.589 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:08.596 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:08.598 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:08.599 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 8.4244ms
+2024-01-05 16:15:08.600 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:08.603 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:08.606 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:08.610 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 28.8330ms
+2024-01-05 16:15:08.610 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:08.611 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:08.612 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:08.615 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:08.617 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:08.618 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.3065ms
+2024-01-05 16:15:08.619 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:08.619 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:08.620 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:08.620 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 20.0604ms
+2024-01-05 16:15:08.621 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:08.622 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:08.623 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:08.626 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:08.627 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:08.628 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.1776ms
+2024-01-05 16:15:08.629 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:08.630 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 11.8568ms
+2024-01-05 16:15:21.408 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:21.408 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:21.409 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:21.409 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:21.410 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:21.413 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:21.415 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:21.416 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.2913ms
+2024-01-05 16:15:21.417 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:21.417 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:21.418 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:21.422 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 14.9501ms
+2024-01-05 16:15:21.423 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:21.424 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:21.425 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:21.427 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:21.428 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:21.429 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.1534ms
+2024-01-05 16:15:21.430 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:21.431 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:21.431 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:21.432 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 15.2238ms
+2024-01-05 16:15:21.432 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:21.433 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:21.434 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:21.437 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:21.438 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:21.439 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.3069ms
+2024-01-05 16:15:21.440 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:21.440 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 9.9575ms
+2024-01-05 16:15:23.640 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:23.640 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:23.641 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:23.641 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:23.642 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:23.644 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:23.646 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:23.647 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.276ms
+2024-01-05 16:15:23.648 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:23.648 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:23.649 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:23.650 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 10.0941ms
+2024-01-05 16:15:23.650 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:23.651 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:23.652 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:23.654 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:23.655 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:23.656 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.1712ms
+2024-01-05 16:15:23.657 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:23.657 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:23.658 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:23.659 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 11.4134ms
+2024-01-05 16:15:23.659 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:23.660 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:23.661 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:23.663 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:23.665 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:23.666 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.2725ms
+2024-01-05 16:15:23.667 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:23.668 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 10.3411ms
+2024-01-05 16:15:27.818 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:27.819 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:27.820 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:27.820 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:27.821 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:27.823 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:27.824 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:27.825 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.3537ms
+2024-01-05 16:15:27.827 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:27.827 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:27.828 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 9.7686ms
+2024-01-05 16:15:27.829 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:27.830 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:27.830 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:27.831 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:27.833 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:27.834 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:27.835 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.1913ms
+2024-01-05 16:15:27.836 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:27.836 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:27.837 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:27.837 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 10.6185ms
+2024-01-05 16:15:27.838 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:27.839 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:27.840 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:27.842 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:27.843 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:27.844 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.7021ms
+2024-01-05 16:15:27.845 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:27.846 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 9.9116ms
+2024-01-05 16:15:36.187 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:36.188 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:36.189 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:36.190 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:36.190 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:36.194 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:36.196 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:36.197 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.5074ms
+2024-01-05 16:15:36.198 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:36.198 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:36.199 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 11.9989ms
+2024-01-05 16:15:36.200 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:36.201 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:36.202 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:36.203 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:36.205 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:36.207 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:36.208 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.6282ms
+2024-01-05 16:15:36.209 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:36.209 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:36.210 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:36.210 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 12.1154ms
+2024-01-05 16:15:36.211 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:36.212 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:36.213 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:36.215 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:36.218 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:36.219 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.9829ms
+2024-01-05 16:15:36.220 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:36.221 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 12.3286ms
+2024-01-05 16:15:44.331 +01:00 [INF] Now listening on: https://localhost:7000
+2024-01-05 16:15:44.363 +01:00 [INF] Now listening on: http://localhost:5156
+2024-01-05 16:15:44.366 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 16:15:44.366 +01:00 [INF] Hosting environment: Development
+2024-01-05 16:15:44.367 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities
+2024-01-05 16:15:47.798 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - -
+2024-01-05 16:15:47.966 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - - - 200 - text/html;charset=utf-8 168.7604ms
+2024-01-05 16:15:47.968 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+2024-01-05 16:15:47.971 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+2024-01-05 16:15:47.974 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12384 application/javascript;+charset=utf-8 5.8362ms
+2024-01-05 16:15:47.992 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.0022ms
+2024-01-05 16:15:48.050 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - -
+2024-01-05 16:15:48.145 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.2064ms
+2024-01-05 16:15:51.001 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:51.013 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:51.015 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:51.019 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:51.034 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:51.674 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:51.677 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:51.678 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:51.682 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:51.689 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:52.122 +01:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:52.122 +01:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:52.196 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:52.196 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:52.205 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:52.207 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:52.208 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:52.208 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 1170.1209ms
+2024-01-05 16:15:52.208 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 513.7763ms
+2024-01-05 16:15:52.209 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:52.210 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:52.211 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:52.212 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:52.220 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 0 - application/json;+charset=utf-8 1218.9217ms
+2024-01-05 16:15:52.220 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 546.4336ms
+2024-01-05 16:15:52.259 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:52.262 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:52.263 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 48.027ms
+2024-01-05 16:15:52.264 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:15:52.264 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:52.265 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:15:52.266 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 60.6263ms
+2024-01-05 16:15:52.266 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:15:52.268 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:52.269 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:15:52.271 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:15:52.274 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:15:52.275 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.9217ms
+2024-01-05 16:15:52.276 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:15:52.277 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 12.8945ms
+2024-01-05 16:16:05.784 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:05.785 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:05.786 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:05.787 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:05.788 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:05.794 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:05.796 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:05.798 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 7.856ms
+2024-01-05 16:16:05.799 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:05.800 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:05.801 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.0749ms
+2024-01-05 16:16:05.802 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:05.803 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:05.804 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:05.805 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:05.808 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:05.810 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:05.812 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.4231ms
+2024-01-05 16:16:05.813 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:05.813 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:05.814 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:05.815 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 15.0904ms
+2024-01-05 16:16:05.816 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:05.817 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:05.818 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:05.821 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:05.823 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:05.824 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.0208ms
+2024-01-05 16:16:05.826 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:05.827 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 13.6038ms
+2024-01-05 16:16:07.864 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:07.866 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:07.866 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:07.867 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:07.868 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:07.872 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:07.874 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:07.876 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.8423ms
+2024-01-05 16:16:07.877 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:07.877 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:07.878 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:07.879 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 14.8896ms
+2024-01-05 16:16:07.880 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:07.883 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:07.884 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:07.887 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:07.889 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:07.891 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.9703ms
+2024-01-05 16:16:07.892 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:07.892 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:07.893 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:07.894 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.0593ms
+2024-01-05 16:16:07.894 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:07.896 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:07.897 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:07.899 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:07.901 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:07.902 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.9714ms
+2024-01-05 16:16:07.904 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:07.905 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 12.6037ms
+2024-01-05 16:16:16.802 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:16.803 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:16.804 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:16.805 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:16.806 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:16.811 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:16.813 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:16.815 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 7.0939ms
+2024-01-05 16:16:16.816 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:16.816 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:16.817 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:16.818 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 16.2112ms
+2024-01-05 16:16:16.818 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:16.820 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:16.822 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:16.829 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:16.832 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:16.833 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 7.8349ms
+2024-01-05 16:16:16.837 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:16.836 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:16:16.840 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 24.0001ms
+2024-01-05 16:16:16.840 +01:00 [INF] CORS policy execution failed.
+2024-01-05 16:16:16.841 +01:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2024-01-05 16:16:16.842 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:16.844 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:16:16.847 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:16:16.849 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:16:16.850 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.3393ms
+2024-01-05 16:16:16.852 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:16:16.853 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.3014ms
+2024-01-05 16:17:03.248 +01:00 [INF] Now listening on: https://localhost:7000
+2024-01-05 16:17:03.283 +01:00 [INF] Now listening on: http://localhost:5156
+2024-01-05 16:17:03.285 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 16:17:03.286 +01:00 [INF] Hosting environment: Development
+2024-01-05 16:17:03.287 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities
+2024-01-05 16:17:06.909 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - -
+2024-01-05 16:17:07.083 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - - - 200 - text/html;charset=utf-8 174.9903ms
+2024-01-05 16:17:07.093 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+2024-01-05 16:17:07.093 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+2024-01-05 16:17:07.116 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12384 application/javascript;+charset=utf-8 23.7732ms
+2024-01-05 16:17:07.148 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.3244ms
+2024-01-05 16:17:07.200 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - -
+2024-01-05 16:17:07.294 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.5157ms
+2024-01-05 16:17:14.245 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:17:14.252 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:17:14.258 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:17:14.273 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:17:15.011 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:17:15.072 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:17:15.080 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:17:15.082 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 804.9721ms
+2024-01-05 16:17:15.083 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:17:15.084 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:17:15.084 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:17:15.086 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:17:15.093 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 848.1623ms
+2024-01-05 16:17:15.102 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:17:15.105 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:17:15.107 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 19.2584ms
+2024-01-05 16:17:15.108 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:17:15.109 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 28.8727ms
+2024-01-05 16:18:11.851 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:18:11.891 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:18:11.892 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:18:11.893 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:18:11.935 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:18:11.937 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:18:11.938 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 44.4835ms
+2024-01-05 16:18:11.942 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:18:11.943 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:18:11.943 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:18:11.944 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 93.6986ms
+2024-01-05 16:18:11.945 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:18:11.949 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:18:11.953 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:18:11.956 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:18:11.957 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.8905ms
+2024-01-05 16:18:11.958 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:18:11.959 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.1030ms
+2024-01-05 16:21:35.613 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:21:35.617 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:21:35.618 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:35.619 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:21:35.624 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:21:35.626 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:21:35.627 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 6.3452ms
+2024-01-05 16:21:35.632 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:21:35.632 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:35.633 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:21:35.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 20.5915ms
+2024-01-05 16:21:35.635 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:35.640 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:21:35.643 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:21:35.645 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:21:35.646 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.7525ms
+2024-01-05 16:21:35.648 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:35.649 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.3388ms
+2024-01-05 16:21:36.249 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:21:36.250 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:21:36.251 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:36.252 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:21:36.254 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:21:36.257 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:21:36.258 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.3142ms
+2024-01-05 16:21:36.259 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:36.260 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:21:36.260 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 11.4550ms
+2024-01-05 16:21:36.261 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:21:36.262 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:36.263 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:21:36.267 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:21:36.269 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:21:36.271 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.9085ms
+2024-01-05 16:21:36.272 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:21:36.274 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 14.2324ms
+2024-01-05 16:26:49.514 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:26:49.518 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:26:49.519 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:26:49.521 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:26:49.528 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:26:49.530 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:26:49.531 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 8.7705ms
+2024-01-05 16:26:49.535 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-05 16:26:49.536 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:26:49.537 +01:00 [INF] CORS policy execution successful.
+2024-01-05 16:26:49.538 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 24.4380ms
+2024-01-05 16:26:49.542 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:26:49.545 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-05 16:26:49.550 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-05 16:26:49.552 +01:00 [INF] Executing ObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-05 16:26:49.554 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 7.329ms
+2024-01-05 16:26:49.555 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-05 16:26:49.556 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 21.2781ms

@@ -2,25 +2,25 @@
 using Calcifer.Services.EventAPI.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers
+namespace Calcifer.Services.EventAPI.Controllers
 {
     [Route("api/events")]
     [ApiController]
     public class EventsController : ControllerBase
     {
         private readonly IEventService _eventService;
-        private ResponseDto _responseDto;
+        private EventResponseDto _responseDto;
         private readonly ILogger<EventsController> _logger;
 
         public EventsController(IEventService eventService, ILogger<EventsController> logger)
         {
             _eventService = eventService;
-            _responseDto = new ResponseDto();
+            _responseDto = new EventResponseDto();
             _logger = logger;
         }
 
         [HttpGet("GetEvents")]
-        public async Task<ResponseDto> GetEvents()
+        public async Task<EventResponseDto> GetEvents()
         {
             try
             {
@@ -37,7 +37,7 @@ namespace API.Controllers
         }
 
         [HttpGet("GetEvent/{id}")]
-        public async Task<ResponseDto> GetEvent(Guid id)
+        public async Task<EventResponseDto> GetEvent(Guid id)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace API.Controllers
         }
 
         [HttpPost("AddEvent")]
-        public async Task<ResponseDto> AddEvent([FromBody] EventRequestDto requestDto)
+        public async Task<EventResponseDto> AddEvent([FromBody] EventRequestDto requestDto)
         {
             try
             {
@@ -81,7 +81,7 @@ namespace API.Controllers
         }
 
         [HttpDelete("DeleteEvent/{id}")]
-        public async Task<ResponseDto> DeleteEvent(Guid id)
+        public async Task<EventResponseDto> DeleteEvent(Guid id)
         {
             try
             {
@@ -105,7 +105,7 @@ namespace API.Controllers
         }
 
         [HttpPut("UpdateEvent")]
-        public async Task<ResponseDto> UpdateEvent([FromBody] EventDto eventDto)
+        public async Task<EventResponseDto> UpdateEvent([FromBody] EventDto eventDto)
         {
             try
             {

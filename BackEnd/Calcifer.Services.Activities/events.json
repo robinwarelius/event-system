@@ -1,39 +1,39 @@
 [
   {
     "EventId": "72CAF757-103B-42B2-8731-D938F7DCA3F7",
-    "Title": "Past Activity 1",
+    "Title": "Past Event 1",
     "City": "Stockholm",
     "PlaceVenue": "Pub",
     "Date": "2020-01-01",
     "Details": "Great Party",
-    "Category": "drinks"
+    "Category": "Drinks"
   },
   {
     "EventId": "CE03D3C4-B2FC-4B7F-B042-1C93F93FB58D",
-    "Title": "Future Activity 1",
+    "Title": "Future Event 1",
     "City": "Sundbyberg",
     "PlaceVenue": "Willys",
     "Date": "2024-01-01",
     "Details": "lol",
-    "Category": "culture"
+    "Category": "Culture"
   },
   {
     "EventId": "A125CA18-EE7E-468F-932A-E60FA408008E",
-    "Title": "Future Activity 2",
+    "Title": "Future Event 2",
     "City": "Varnamo",
     "PlaceVenue": "Lagan",
     "Date": "2024-02-02",
     "Details": "Kom",
-    "Category": "music"
+    "Category": "Music"
   },
   {
     "EventId": "39485834-BB59-4F2A-9BC3-B3D81C90CCE1",
-    "Title": "Future Activity 3",
+    "Title": "Future Event 3",
     "City": "Orebro",
     "PlaceVenue": "Torget",
     "Date": "2024-05-01",
     "Details": "Fest",
-    "Category": "travel"
+    "Category": "Travel"
   },
   {
     "EventId": "B9B291A6-B5C7-4DE0-A611-3D719DB50DF1",
@@ -42,6 +42,6 @@
     "PlaceVenue": "Stora Torget",
     "Date": "2024-05-15",
     "Details": "Bio",
-    "Category": "film"
+    "Category": "Movie"
   }
 ]

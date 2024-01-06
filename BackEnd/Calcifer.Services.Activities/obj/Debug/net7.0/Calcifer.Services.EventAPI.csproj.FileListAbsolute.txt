@@ -87,3 +87,4 @@ C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcif
 C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities\obj\Debug\net7.0\Calcifer.Services.EventAPI.pdb
 C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities\obj\Debug\net7.0\Calcifer.Services.EventAPI.genruntimeconfig.cache
 C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities\obj\Debug\net7.0\ref\Calcifer.Services.EventAPI.dll
+C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities\obj\Debug\net7.0\Calcifer.Services.EventAPI.sourcelink.json

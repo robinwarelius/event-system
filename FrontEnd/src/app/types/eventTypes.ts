@@ -1,5 +1,4 @@
-export interface Event {
-   result: {
+export interface EventDto {
     eventId: string
     title: string
     city: string
@@ -7,7 +6,10 @@ export interface Event {
     date: string
     details: string
     category: string
-    }
-    message: string
-    isSuccess: boolean
+}
+
+export interface EventResponse {
+   result: EventDto[];
+   message: string
+   isSuccess: boolean
 }
