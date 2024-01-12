@@ -20,114 +20,125 @@ namespace Calcifer.Services.EventAPI.Controllers
         }
 
         [HttpGet("GetEvents")]
-        public async Task<EventResponseDto> GetEvents()
+        public async Task<ActionResult<EventResponseDto>> GetEvents()
         {
             try
             {
                 var result = await _eventService.GetAllAsync();
                 _responseDto.Result = result;
+                return Ok(_responseDto);
             }
             catch (Exception ex)
             {
                 _responseDto.Message = ex.Message.ToString();
                 _responseDto.IsSuccess = false;
                 _logger.LogWarning($"Endpoint: GetEvents | {_responseDto.Message}");
+                return StatusCode(500, _responseDto); 
             }
-            return _responseDto;
         }
 
         [HttpGet("GetEvent/{id}")]
-        public async Task<EventResponseDto> GetEvent(Guid id)
+        public async Task<ActionResult<EventResponseDto>> GetEvent(Guid id)
         {
             try
             {
                 var result = await _eventService.GetAsync(id);
-                _responseDto.Result = result;
 
                 if (result == null)
                 {
                     _responseDto.IsSuccess = false;
-                    _responseDto.Message = "Something went wrong";
+                    _responseDto.Message = "Event not found.";
+                    return NotFound(_responseDto);
                 }
+                _responseDto.Result = result;
+                return Ok(_responseDto);
             }
             catch (Exception ex)
             {
                 _responseDto.IsSuccess = false;
-                _responseDto.Message = ex.Message.ToString();
-                _logger.LogWarning($"Endpoint: GetEvent | Data: {id} | {_responseDto.Message}");
+                _responseDto.Message = "An error occurred processing your request.";
+                _logger.LogWarning($"Endpoint: GetEvent | Data: {id} | {ex.Message}");
+                return StatusCode(500, _responseDto);
             }
-
-            return _responseDto;
         }
 
         [HttpPost("AddEvent")]
-        public async Task<EventResponseDto> AddEvent([FromBody] EventRequestDto requestDto)
+        public async Task<ActionResult<EventResponseDto>> AddEvent([FromBody] EventRequestDto requestDto)
         {
+            if (!ModelState.IsValid)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = "Invalid request data";
+                return BadRequest(_responseDto);
+            }
             try
             {
-                if (ModelState.IsValid)
-                {
-                    var result = await _eventService.AddAsync(requestDto);
-                    _responseDto.Result = result;
-                }
+                var result = await _eventService.AddAsync(requestDto);
+                _responseDto.Result = result;
+                return Ok(_responseDto);
             }
             catch (Exception ex)
             {
                 _responseDto.IsSuccess = false;
-                _responseDto.Message = ex.Message.ToString();
-                _logger.LogWarning($"Endpoint: AddEvent | Data: {requestDto} | {_responseDto.Message}");
+                _responseDto.Message = "An error occurred while processing your request.";
+                _logger.LogError($"Endpoint: AddEvent | Data: {requestDto} | Exception: {ex.Message}");
+                return StatusCode(500, _responseDto);
             }
-            return _responseDto;
         }
 
         [HttpDelete("DeleteEvent/{id}")]
-        public async Task<EventResponseDto> DeleteEvent(Guid id)
+        public async Task<ActionResult<EventResponseDto>> DeleteEvent(Guid id)
         {
             try
             {
                 var result = await _eventService.DeleteAsync(id);
-                _responseDto.Result = result;
-
                 if (!result)
                 {
                     _responseDto.IsSuccess = false;
-                    _responseDto.Message = "Something went wrong";
+                    _responseDto.Message = "Event not found or could not be deleted";
+                    return NotFound(_responseDto);
                 }
+                return Ok(_responseDto);
             }
             catch (Exception ex)
             {
                 _responseDto.IsSuccess = false;
-                _responseDto.Message = ex.Message.ToString();
-                _logger.LogWarning($"Endpoint: DeleteEvent | Data: {id} | {_responseDto.Message}");
+                _responseDto.Message = "An error occurred while processing your request.";
+                _logger.LogError($"Endpoint: DeleteEvent | Data: {id} | Exception: {ex.Message}");
+                return StatusCode(500, _responseDto);
             }
-
-            return _responseDto;
         }
 
         [HttpPut("UpdateEvent")]
-        public async Task<EventResponseDto> UpdateEvent([FromBody] EventDto eventDto)
+        public async Task<ActionResult<EventResponseDto>> UpdateEvent([FromBody] EventDto eventDto)
         {
+            if (!ModelState.IsValid)
+            {
+                _responseDto.IsSuccess = false;
+                _responseDto.Message = "Invalid request data";
+                return BadRequest(_responseDto);
+            }
             try
             {
-                if (ModelState.IsValid)
-                {
-                    var result = await _eventService.UpdateAsync(eventDto);
-                    _responseDto.Result = result;
+                var result = await _eventService.UpdateAsync(eventDto);
 
-                    if (result == null)
-                    {
-                        _responseDto.IsSuccess = false;
-                        _responseDto.Message = "Something went wrong";
-                    }
+                if (result == null)
+                {
+                    _responseDto.IsSuccess = false;
+                    _responseDto.Message = "Event not found or could not be updated";
+                    return NotFound(_responseDto);
                 }
+
+                _responseDto.Result = result;
+                return Ok(_responseDto);
             }
             catch (Exception ex)
             {
                 _responseDto.IsSuccess = false;
-                _responseDto.Message = ex.Message.ToString();
-                _logger.LogWarning($"Endpoint: UpdateEvent | Data: {eventDto} | {_responseDto.Message}");
+                _responseDto.Message = "An error occurred while processing your request.";
+                _logger.LogError($"Endpoint: UpdateEvent | Data: {eventDto} | Exception: {ex.Message}");
+                return StatusCode(500, _responseDto);
             }
-            return _responseDto;
         }
     }
 }

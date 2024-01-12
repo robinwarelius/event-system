@@ -1,0 +1,13 @@
+2024-01-07 18:51:58.129 +01:00 [INF] Now listening on: https://localhost:7000
+2024-01-07 18:51:58.171 +01:00 [INF] Now listening on: http://localhost:5156
+2024-01-07 18:51:58.174 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 18:51:58.175 +01:00 [INF] Hosting environment: Development
+2024-01-07 18:51:58.176 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities
+2024-01-07 18:52:02.223 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - -
+2024-01-07 18:52:02.423 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - - - 200 - text/html;charset=utf-8 201.2765ms
+2024-01-07 18:52:02.431 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+2024-01-07 18:52:02.431 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+2024-01-07 18:52:02.444 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12384 application/javascript;+charset=utf-8 12.8907ms
+2024-01-07 18:52:02.473 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.9445ms
+2024-01-07 18:52:02.521 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - -
+2024-01-07 18:52:02.632 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 111.3754ms
