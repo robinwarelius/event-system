@@ -109,15 +109,11 @@ export default class EventStore {
  
     addEvent = async (event: EventDto) => {
         try {         
-            const response = await apiClient.Events.add(event);
+            await apiClient.Events.add(event);
             runInAction(() => {
-                if(response.isSuccess){
                     this.setEvent(event)
                     this.selectedEvent = event;
-                    this.editMode = false;                
-                }
             });
-            return response; 
         } catch (error){
             runInAction(() => {
                 console.log(error)

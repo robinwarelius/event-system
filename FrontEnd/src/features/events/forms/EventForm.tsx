@@ -4,6 +4,8 @@ import { observer } from "mobx-react-lite";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { EventDto } from "../../../app/types/eventTypes";
 import {v4 as uuid} from 'uuid'
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 export default observer (function EventForm() {
 
@@ -22,79 +24,116 @@ export default observer (function EventForm() {
         category: ''
     })
 
+
+    const validationSchema = Yup.object({
+        title: Yup.string().required('Title is required'),
+        city: Yup.string().required('City is required'),
+        placeVenue: Yup.string().required('Place is required'),
+        date: Yup.string().required('Date is required'),
+        details: Yup.string().required('Details is required'),
+        category: Yup.string().required('Category is required'),
+    });
+
     useEffect(() => {
-        if (id) {
-            loadEvent(id).then(loadedEvent => {
-                if (loadedEvent) setEvent(loadedEvent);
-            });
-        }
+        if (id) loadEvent(id).then(event => setEvent(event!));
     }, [id, loadEvent]);
 
-    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-        try {
-            if (!event.eventId) {
-                event.eventId = uuid();
-                await addEvent(event).then(() => navigate(`/events/${event.eventId}`))
-                
-            } else {
-                await updateEvent(event).then(() => navigate(`/events/${event.eventId}`))
-            }
-        } catch (error) {
-            console.error("Error in handleSubmit:", error);
+   function handleFormSubmit(event: EventDto) {
+        console.log("wsp")
+        if (event.eventId.length === 0) {
+            let newEvent = {
+                ...event,
+                eventId: uuid()
+            };
+            console.log(newEvent)
+            addEvent(newEvent).then(() => navigate(`/events/${newEvent.eventId}`))
+        } else {
+            console.log(event)
+            updateEvent(event).then(() => navigate(`/events/${event.eventId}`))
         }
-    }
-
-    function handleOnChange(e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
-        const { name, value } = e.target;
-        setEvent({...event, [name]: value});
     }
 
     return (
-        <div className="card">
-            <div className="card-body">             
-                <form autoComplete="off" onSubmit={handleSubmit}>
+        <div className="row justify-content-center">
+            <div className="col-lg-6">
+            <Formik
+                enableReinitialize
+                validationSchema={validationSchema}
+                initialValues={event}
+                onSubmit={values => handleFormSubmit(values)}>
+                {({ handleSubmit, isValid, isSubmitting, dirty }) => (
+                    <Form onSubmit={handleSubmit} autoComplete='off'>
+
+                    {id? <h2 className="mb-3">Update Event</h2> : <h2 className="mb-3">Create Event</h2> }
+
                     <div className="mb-3">
-                       <label className="form-label">Title</label>
-                       <input className="form-control" value={event.title} name='title' onChange={handleOnChange} /> 
-                   </div>
-                   <div className="mb-3">
-                       <label className="form-label">City</label>
-                       <input name="city" value={event.city} className="form-control" onChange={handleOnChange}/>
-                   </div>
-                   <div className="mb-3">
-                       <label className="form-label">Place</label>
-                       <input name="placeVenue" value={event!.placeVenue} className="form-control" onChange={handleOnChange}/>
-                   </div>
-                   <div className="mb-3">
-                       <label className="form-label">Date</label>
-                       <input type="date" name="date" value={event!.date} className="form-control" onChange={handleOnChange}/>
-                   </div>
-                   <div className="mb-3">
-                       <label className="form-label">Details</label>
-                       <textarea name="details" value={event!.details} className="form-control" onChange={handleOnChange}></textarea>
-                   </div>
-                   <div className="mb-3">
-                        <label className="form-label">Category</label>
-                        <select name="category" value={event!.category} className="form-select" onChange={handleOnChange}>
-                             <option value="" disabled>Välj en kategori...</option>
-                            <option value="food">Food</option>
-                            <option value="movie">Movie</option>
-                            <option value="party">Party</option>
-                            <option value="sport">Sport</option>
-                            <option value="culture">Culture</option>
-                        </select>
-                  </div>
-                 
-                    <div className="d-grid gap-2 d-md-flex justify-content-md-end card-body">
-                        <button type="submit" className="btn btn-success me-md-2">Submit</button>
-                        <NavLink to={"/events"} type="submit" className="btn btn-danger">Cancel</NavLink>
+                        <div className="input-group">
+                        <span className="input-group-text">Title</span>
+                            <Field className="form-control" name='title' />
+                        </div>
+                        <ErrorMessage name='title' render={error => <p className="text-danger">{error}</p>} />
                     </div>
-                </form>
+
+                    <div className="mb-3">
+                        <div className="input-group">
+                        <span className="input-group-text">City</span>
+                        <Field className="form-control" name='city' />
+                        </div>
+                        <ErrorMessage name='city' render={error => <p className="text-danger">{error}</p>} />
+                    </div>
+
+                    <div className="mb-3">
+                        <div className="input-group">
+                        <span className="input-group-text">Place</span>
+                        <Field className="form-control" name='placeVenue' />
+                        </div>
+                        <ErrorMessage name='placeVenue' render={error => <p className="text-danger">{error}</p>} />
+                    </div>
+
+                    <div className="mb-3">
+                        <div className="input-group">
+                        <span className="input-group-text">Date</span>
+                        <Field type='date' className="form-control" name='date' />
+                        </div>
+                        <ErrorMessage name='date' render={error => <p className="text-danger">{error}</p>} />
+                    </div>
+
+                    <div className="mb-3">
+                        <div className="input-group">
+                        <span className="input-group-text">Details</span>
+                        <Field as='textarea' className="form-control" name='details' />
+                        </div>
+                        <ErrorMessage name='details' render={error => <p className="text-danger">{error}</p>} />
+                    </div>
+
+                    <div className="mb-3">
+                        <div className="input-group">
+                            <span className="input-group-text">Category</span>
+                            <Field as="select" name="category" className="form-control custom-select">
+                                <option disabled value=''>Category...</option>
+                                <option value="food">Food</option>
+                                <option value="movie">Movie</option>
+                                <option value="party">Party</option>
+                                <option value="sport">Sport</option>
+                                <option value="culture">Culture</option>
+                            </Field>
+                        </div>
+                        <ErrorMessage name='category' render={error => <p className="text-danger">{error}</p>} />
+                    </div>
+
+
+                    <div className="list-group-item d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button disabled={!isValid || !dirty || isSubmitting} type='submit' className="btn btn-primary me-md-2 mt-2">Add</button>
+                        <NavLink to={"/events"} className="btn btn-danger me-md-2 mt-2">Cancel</NavLink>    
+                    </div>
+                    </Form>
+                )}
+            </Formik>
             </div>
         </div>
     )
 })
 
 
-// e: React.FormEvent<HTMLFormElement>
-//         // e.preventDefault();
+
+
