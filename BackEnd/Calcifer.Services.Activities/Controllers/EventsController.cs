@@ -1,5 +1,6 @@
 ﻿using Calcifer.Services.EventAPI.Models.Dtos;
 using Calcifer.Services.EventAPI.Services.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Calcifer.Services.EventAPI.Controllers
@@ -38,6 +39,7 @@ namespace Calcifer.Services.EventAPI.Controllers
         }
 
         [HttpGet("GetEvent/{id}")]
+        //[Authorize]
         public async Task<ActionResult<EventResponseDto>> GetEvent(Guid id)
         {
             try

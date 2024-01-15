@@ -11,8 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calcifer.Services.EventAPI", "Calcifer.Services.Activities\Calcifer.Services.EventAPI.csproj", "{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calcifer.Services.AuthAPI", "Calcifer.Services.Authentication\Calcifer.Services.AuthAPI.csproj", "{B0576033-8BB4-4ADC-89AB-70328C42363A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calcifer.MessageBus", "Calcifer.MessageBus\Calcifer.MessageBus.csproj", "{81607ECC-F252-4DE5-B844-5A57B49B93C3}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0576033-8BB4-4ADC-89AB-70328C42363A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81607ECC-F252-4DE5-B844-5A57B49B93C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,7 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E2E1F260-63A4-4A37-A16B-F2276EC3A35A} = {F42CAE2B-3628-4EBF-B646-F4954D1116EB}
-		{B0576033-8BB4-4ADC-89AB-70328C42363A} = {F42CAE2B-3628-4EBF-B646-F4954D1116EB}
 		{81607ECC-F252-4DE5-B844-5A57B49B93C3} = {82774C17-040F-4B81-AB72-98DD6AF00AD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
