@@ -1,4 +1,3 @@
-Examensarbete (in-progress):
-- Bokningssystem
+Event System (in-progress):
 - Backend: .NET API
-- Frontend: React.js 
+- Frontend: React.js (TypeScript & MobX)
