@@ -1,0 +1,374 @@
+2024-01-15 15:13:03.386 +01:00 [INF] User profile is available. Using 'C:\Users\Robin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 15:13:03.555 +01:00 [INF] Now listening on: https://localhost:7000
+2024-01-15 15:13:03.556 +01:00 [INF] Now listening on: http://localhost:5156
+2024-01-15 15:13:03.558 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 15:13:03.559 +01:00 [INF] Hosting environment: Development
+2024-01-15 15:13:03.560 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities
+2024-01-15 15:13:06.680 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - -
+2024-01-15 15:13:06.867 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - - - 200 - text/html;charset=utf-8 189.5686ms
+2024-01-15 15:13:06.878 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 15:13:06.878 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+2024-01-15 15:13:06.892 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12384 application/javascript;+charset=utf-8 13.9654ms
+2024-01-15 15:13:06.902 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9089ms
+2024-01-15 15:13:06.987 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - -
+2024-01-15 15:13:07.085 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.2426ms
+2024-01-15 15:13:26.948 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:13:26.955 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:13:26.987 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:26.998 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:13:27.004 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:13:27.005 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:13:27.007 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:13:27.011 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:13:27.014 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 12.6845ms
+2024-01-15 15:13:27.016 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:27.018 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 69.3948ms
+2024-01-15 15:13:27.020 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:13:27.022 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:13:27.025 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:27.026 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:13:27.028 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:13:27.029 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:13:27.030 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:13:27.031 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:13:27.032 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.0125ms
+2024-01-15 15:13:27.034 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:27.035 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 14.7016ms
+2024-01-15 15:13:40.745 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:13:40.747 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:13:40.749 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:40.750 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:13:40.764 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:13:40.765 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:13:40.766 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:13:40.767 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:13:40.768 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 6.5171ms
+2024-01-15 15:13:40.769 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:40.770 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 24.9925ms
+2024-01-15 15:13:40.772 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:13:40.773 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:13:40.774 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:40.775 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:13:40.777 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:13:40.778 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:13:40.779 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:13:40.780 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:13:40.781 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.8858ms
+2024-01-15 15:13:40.783 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:13:40.784 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 11.7190ms
+2024-01-15 15:15:29.783 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:15:29.786 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:15:29.787 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:15:29.788 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:15:29.791 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:15:29.791 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:15:29.792 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:15:29.793 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:15:29.794 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.5517ms
+2024-01-15 15:15:29.795 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:15:29.796 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 13.9559ms
+2024-01-15 15:15:29.803 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:15:29.805 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:15:29.805 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:15:29.806 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:15:29.808 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:15:29.809 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:15:29.810 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:15:29.811 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:15:29.812 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.6214ms
+2024-01-15 15:15:29.812 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:15:29.813 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 10.6461ms
+2024-01-15 15:24:38.253 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:24:38.286 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:24:38.287 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:24:38.288 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:24:38.289 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:24:38.290 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:24:38.291 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:24:38.292 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:24:38.293 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.5551ms
+2024-01-15 15:24:38.294 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:24:38.295 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 42.1675ms
+2024-01-15 15:24:38.297 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:24:38.298 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:24:38.299 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:24:38.300 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:24:38.302 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:24:38.302 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:24:38.303 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:24:38.304 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:24:38.305 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.0298ms
+2024-01-15 15:24:38.306 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:24:38.306 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 9.1965ms
+2024-01-15 15:25:21.390 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:25:21.393 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:25:21.394 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:21.395 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:25:21.396 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:25:21.397 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:25:21.398 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:25:21.399 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:25:21.399 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.4074ms
+2024-01-15 15:25:21.400 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:21.401 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 12.3367ms
+2024-01-15 15:25:21.405 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:25:21.406 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:25:21.407 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:21.408 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:25:21.409 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:25:21.410 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:25:21.410 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:25:21.411 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:25:21.412 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.3003ms
+2024-01-15 15:25:21.413 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:21.414 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 8.9922ms
+2024-01-15 15:25:31.078 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:25:31.079 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:25:31.080 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:31.081 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:25:31.083 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:25:31.084 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:25:31.085 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:25:31.086 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:25:31.087 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.5985ms
+2024-01-15 15:25:31.087 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:31.088 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 10.0285ms
+2024-01-15 15:25:31.092 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:25:31.092 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:25:31.093 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:31.094 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:25:31.096 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:25:31.096 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:25:31.097 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:25:31.098 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:25:31.099 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.1373ms
+2024-01-15 15:25:31.100 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:25:31.101 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 8.9883ms
+2024-01-15 15:28:46.777 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:28:46.780 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:28:46.781 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:28:46.782 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:28:46.783 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:28:46.784 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:28:46.785 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:28:46.786 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:28:46.786 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.1377ms
+2024-01-15 15:28:46.787 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:28:46.788 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 10.9937ms
+2024-01-15 15:28:46.792 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:28:46.793 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:28:46.793 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:28:46.794 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:28:46.796 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:28:46.796 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:28:46.797 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:28:46.798 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:28:46.798 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 2.9276ms
+2024-01-15 15:28:46.800 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:28:46.800 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 8.4926ms
+2024-01-15 15:29:18.179 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:29:18.183 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:29:18.184 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:29:18.185 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:29:18.186 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:29:18.187 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:29:18.188 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:29:18.189 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:29:18.190 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.412ms
+2024-01-15 15:29:18.191 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:29:18.192 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 12.7537ms
+2024-01-15 15:29:18.194 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:29:18.195 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:29:18.195 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:29:18.196 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:29:18.197 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:29:18.198 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:29:18.199 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:29:18.200 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:29:18.200 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.0846ms
+2024-01-15 15:29:18.201 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:29:18.202 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 8.3562ms
+2024-01-15 15:30:46.154 +01:00 [INF] User profile is available. Using 'C:\Users\Robin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 15:30:46.320 +01:00 [INF] Now listening on: https://localhost:7000
+2024-01-15 15:30:46.321 +01:00 [INF] Now listening on: http://localhost:5156
+2024-01-15 15:30:46.324 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 15:30:46.324 +01:00 [INF] Hosting environment: Development
+2024-01-15 15:30:46.325 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities
+2024-01-15 15:30:46.861 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:46.907 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:46.958 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:46.977 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:46.983 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:46.985 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:46.987 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:46.993 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:46.996 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 15.1322ms
+2024-01-15 15:30:46.999 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:47.002 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 143.2301ms
+2024-01-15 15:30:47.012 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:47.015 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:47.017 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:47.019 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:47.022 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:47.023 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:47.024 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:47.025 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:47.026 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.1173ms
+2024-01-15 15:30:47.027 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:47.028 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 16.1576ms
+2024-01-15 15:30:49.421 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - -
+2024-01-15 15:30:49.545 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - - - 200 - text/html;charset=utf-8 123.9564ms
+2024-01-15 15:30:49.548 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 15:30:49.549 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+2024-01-15 15:30:49.566 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12384 application/javascript;+charset=utf-8 17.8374ms
+2024-01-15 15:30:49.574 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6406ms
+2024-01-15 15:30:49.633 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - -
+2024-01-15 15:30:49.734 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.2133ms
+2024-01-15 15:30:51.846 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:51.847 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:51.849 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:51.857 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:51.860 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:51.861 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:51.862 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:51.863 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:51.863 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.6304ms
+2024-01-15 15:30:51.864 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:51.866 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 20.0048ms
+2024-01-15 15:30:51.868 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:51.869 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:51.869 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:51.870 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:51.872 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:51.873 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:51.873 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:51.874 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:51.875 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.2993ms
+2024-01-15 15:30:51.876 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:51.876 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 8.6427ms
+2024-01-15 15:30:54.165 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:54.166 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:54.167 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:54.168 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:54.171 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:54.171 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:54.172 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:54.173 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:54.174 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 4.0082ms
+2024-01-15 15:30:54.175 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:54.176 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 11.0864ms
+2024-01-15 15:30:54.178 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:54.179 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:54.180 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:54.181 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:54.183 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:54.184 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:54.185 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:54.186 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:54.186 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.5746ms
+2024-01-15 15:30:54.188 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:54.189 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 10.6116ms
+2024-01-15 15:30:55.226 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:55.227 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:55.228 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:55.229 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:55.231 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:55.232 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:55.233 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:55.233 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:55.234 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.7614ms
+2024-01-15 15:30:55.236 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:55.237 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 10.4617ms
+2024-01-15 15:30:55.239 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:30:55.240 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:30:55.240 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:55.242 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:30:55.244 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-15 15:30:55.244 +01:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2024-01-15 15:30:55.245 +01:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2024-01-15 15:30:55.246 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-15 15:30:55.247 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 3.8374ms
+2024-01-15 15:30:55.249 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:30:55.250 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 401 0 - 10.9715ms
+2024-01-15 15:31:12.470 +01:00 [INF] User profile is available. Using 'C:\Users\Robin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 15:31:12.670 +01:00 [INF] Now listening on: https://localhost:7000
+2024-01-15 15:31:12.671 +01:00 [INF] Now listening on: http://localhost:5156
+2024-01-15 15:31:12.674 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 15:31:12.675 +01:00 [INF] Hosting environment: Development
+2024-01-15 15:31:12.676 +01:00 [INF] Content root path: C:\Users\Robin\OneDrive\Skrivbord\Nackademin-Kurser\ExamensArbete\BackEnd\Calcifer.Services.Activities
+2024-01-15 15:31:14.896 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/index.html - -
+2024-01-15 15:31:15.062 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/index.html - - - 200 - text/html;charset=utf-8 166.6069ms
+2024-01-15 15:31:15.069 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - -
+2024-01-15 15:31:15.069 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/_vs/browserLink - -
+2024-01-15 15:31:15.081 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_framework/aspnetcore-browser-refresh.js - - - 200 12384 application/javascript;+charset=utf-8 12.0307ms
+2024-01-15 15:31:15.090 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.1788ms
+2024-01-15 15:31:15.144 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - -
+2024-01-15 15:31:15.236 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 92.1681ms
+2024-01-15 15:31:19.658 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:31:19.665 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:31:19.705 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:31:19.720 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:31:20.565 +01:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-15 15:31:20.620 +01:00 [INF] Executing OkObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-15 15:31:20.629 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:31:20.631 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 905.8685ms
+2024-01-15 15:31:20.632 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:31:20.632 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:31:20.633 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:31:20.634 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:31:20.641 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 983.0283ms
+2024-01-15 15:31:20.651 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-15 15:31:20.654 +01:00 [INF] Executing OkObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-15 15:31:20.655 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 19.2992ms
+2024-01-15 15:31:20.656 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:31:20.657 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 28.6279ms
+2024-01-15 15:36:18.968 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:36:18.973 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:36:18.976 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:36:18.977 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:36:19.033 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-15 15:36:19.035 +01:00 [INF] Executing OkObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-15 15:36:19.036 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 57.1003ms
+2024-01-15 15:36:19.041 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7000/api/events/GetEvents - -
+2024-01-15 15:36:19.043 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:36:19.043 +01:00 [INF] CORS policy execution successful.
+2024-01-15 15:36:19.044 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 77.3879ms
+2024-01-15 15:36:19.048 +01:00 [INF] Executing endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:36:19.050 +01:00 [INF] Route matched with {action = "GetEvents", controller = "Events"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto]] GetEvents() on controller Calcifer.Services.EventAPI.Controllers.EventsController (Calcifer.Services.EventAPI).
+2024-01-15 15:36:19.052 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EventId], [e].[Category], [e].[City], [e].[Date], [e].[Details], [e].[PlaceVenue], [e].[Title]
+FROM [Event] AS [e]
+2024-01-15 15:36:19.055 +01:00 [INF] Executing OkObjectResult, writing value of type 'Calcifer.Services.EventAPI.Models.Dtos.EventResponseDto'.
+2024-01-15 15:36:19.056 +01:00 [INF] Executed action Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI) in 5.0602ms
+2024-01-15 15:36:19.057 +01:00 [INF] Executed endpoint 'Calcifer.Services.EventAPI.Controllers.EventsController.GetEvents (Calcifer.Services.EventAPI)'
+2024-01-15 15:36:19.058 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7000/api/events/GetEvents - - - 200 - application/json;+charset=utf-8 17.3352ms

@@ -1,6 +1,6 @@
 import { makeAutoObservable, runInAction } from "mobx"
-import { EventDto, EventResponse } from "../types/eventTypes";
-import apiClient from "../api/apiClient";
+import { EventDto, EventResponse } from "../models/event";
+import agent from "../api/agent";
 
 // Definiera en klass för hantering av händelser (events).
 export default class EventStore {
@@ -31,7 +31,7 @@ export default class EventStore {
 
     loadEvents = async () => {
         try {
-            this.response = await apiClient.Events.list();
+            this.response = await agent.Events.list();
             if(this.response.isSuccess){
                 runInAction(() => {
                     this.response?.result.forEach((event) => {
@@ -63,7 +63,7 @@ export default class EventStore {
         else 
         {
             try {
-                this.response = await apiClient.Events.details(id);
+                this.response = await agent.Events.details(id);
                 runInAction(() => {
                     if(this.response?.isSuccess){
                         this.response.result.forEach((event) => {
@@ -91,7 +91,7 @@ export default class EventStore {
 
     deleteEvent = async (id: string) => {
         try {
-            await apiClient.Events.delete(id).then(reponse => {
+            await agent.Events.delete(id).then(reponse => {
                 runInAction(() => {
                     if(reponse.isSuccess){
                         this.eventsRegistry.delete(id);                     
@@ -106,10 +106,9 @@ export default class EventStore {
         }
     }
 
- 
     addEvent = async (event: EventDto) => {
         try {         
-            await apiClient.Events.add(event);
+            await agent.Events.add(event);
             runInAction(() => {
                     this.setEvent(event)
                     this.selectedEvent = event;
@@ -122,10 +121,9 @@ export default class EventStore {
         }
     }
 
-
     updateEvent = async (event: EventDto) => {
         try {         
-            const response = await apiClient.Events.update(event);
+            const response = await agent.Events.update(event);
             runInAction(() => {
                 if(response.isSuccess){
                     this.setEvent(event)

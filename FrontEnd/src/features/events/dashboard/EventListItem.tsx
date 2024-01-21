@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import { EventDto } from "../../../app/types/eventTypes"
+import { EventDto } from "../../../app/models/event"
 import { useStore } from "../../../app/store/store";
 
 interface Props {

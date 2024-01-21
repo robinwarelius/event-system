@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Calcifer.Services.EventAPI.Controllers
 {
+    [AllowAnonymous]
     [Route("api/events")]
     [ApiController]
     public class EventsController : ControllerBase

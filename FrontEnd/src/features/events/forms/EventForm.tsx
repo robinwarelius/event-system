@@ -2,7 +2,7 @@ import { useState, ChangeEvent, useEffect } from "react";
 import { useStore } from "../../../app/store/store";
 import { observer } from "mobx-react-lite";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { EventDto } from "../../../app/types/eventTypes";
+import { EventDto } from "../../../app/models/event";
 import {v4 as uuid} from 'uuid'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -23,7 +23,6 @@ export default observer (function EventForm() {
         details: '',
         category: ''
     })
-
 
     const validationSchema = Yup.object({
         title: Yup.string().required('Title is required'),

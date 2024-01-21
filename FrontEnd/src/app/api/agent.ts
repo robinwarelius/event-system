@@ -1,8 +1,8 @@
 import axios, { AxiosError, AxiosResponse } from 'axios'
-import { EventDto, EventResponse } from '../types/eventTypes';
+import { EventDto, EventResponse } from '../models/event';
 import { router } from '../router/Routes';
 import { toast } from 'react-toastify';
-import { store } from '../store/store';
+import { User, UserFormValues } from '../models/user';
 
 // Sätter en grundläggande URL för alla Axios-förfrågningar till vår lokala server
 axios.defaults.baseURL = 'https://localhost:7000/api';
@@ -36,16 +36,16 @@ axios.interceptors.response.use(async response => {
             toast.error('not found')
             router.navigate('/error');
             break;
-        // case 500:
-        //     store.commonStore.setServerError(data);
-        //     router.navigate('/server-error');
-        //     break;
+        case 500:
+            toast.error('internal server error')
+            router.navigate('/error');
+            break;
     }
     return Promise.reject(error);
 })
 
 // Definierar olika HTTP-förfrågningsmetoder (get, post, put, delete) som använder Axios
-const apiRequests = {
+const requests = {
     get: <T> (url: string) => axios.get<T>(url).then(responseBody),
     post: <T> (url: string, body: {}) => axios.post<T>(url, body).then(responseBody),
     put: <T> (url: string, body: {}) => axios.put<T>(url, body).then(responseBody),
@@ -54,19 +54,27 @@ const apiRequests = {
 
 // Grupperar alla HTTP-förfrågningar som rör 'Events'
 const Events = {
-    list: () => apiRequests.get<EventResponse>('/events/GetEvents'),
-    details: (id: string) => apiRequests.get<EventResponse>(`/events/GetEvent/${id}`),
-    add: (event: EventDto) => apiRequests.post<EventResponse>('/events/AddEvent', event).then(() => console.log("wsp")),
-    delete: (id: string) => apiRequests.delete<EventResponse>(`/events/DeleteEvent/${id}`),
-    update: (event: EventDto) => apiRequests.put<EventResponse>('/events/UpdateEvent', event)
+    list: () => requests.get<EventResponse>('/events/GetEvents'),
+    details: (id: string) => requests.get<EventResponse>(`/events/GetEvent/${id}`),
+    add: (event: EventDto) => requests.post<EventResponse>('/events/AddEvent', event).then(() => console.log("wsp")),
+    delete: (id: string) => requests.delete<EventResponse>(`/events/DeleteEvent/${id}`),
+    update: (event: EventDto) => requests.put<EventResponse>('/events/UpdateEvent', event)
+}
+
+// Grupperar alla HTTP-förfrågningar som rör 'Auth'
+const Auth = {
+    current: () => requests.get<User>('/auth/GetCurrentUser'),
+    login: (user: UserFormValues) => requests.post<User>('/auth/login', user),
+    register: (user: UserFormValues) => requests.post<User>('/auth/register', user)
 }
 
 // Skapar ett objekt 'client' som innehåller alla våra API-förfrågningar
-const client = {
-    Events
+const agent = {
+    Events,
+    Auth
 }
 
 // Exporterar 'client' så att den kan användas i andra delar av applikationen
-export default client;
+export default agent;
 
 

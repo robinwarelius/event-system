@@ -83,9 +83,8 @@ namespace Calcifer.Services.EventAPI.Controllers
             return Unauthorized();          
         }
 
-
         [Authorize]
-        [HttpGet]
+        [HttpGet("GetCurrentUser")]
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
             // Hämta upp email från token som följer med i requesten från klienten....

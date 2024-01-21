@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calcifer.Services.EventAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7d3f92e5469bf6eafa60a54946211489357b1fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calcifer.Services.EventAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calcifer.Services.EventAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
